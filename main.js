@@ -29,7 +29,7 @@ btnGuardar.addEventListener("click", ()=>{
 //se jala el valor que hay en la base de datos..
 ref.on('value', (data)=>{
 
-  console.log("probando datas: ",data.val())
+  console.log("probando datas: ",data.val())  
 
   let dat = data.val()
   let name = ""
@@ -38,6 +38,5 @@ ref.on('value', (data)=>{
    console.log(dat[i].nombre);
    name += dat[i].nombre + " ";
   }
-  dataUsuario.innerHTML = name;
 
 })

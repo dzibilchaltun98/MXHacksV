@@ -182,3 +182,20 @@ main{
 .content-item4 p{
     margin-top: 20px;
 }
+
+
+/*Boton Enviar*/
+#guardar{
+    margin-left: 609px;
+    margin-bottom: 50px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    background-color: #4CAF50; /* Green */
+    background-color: #46a049;
+
+    
+}
