@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HACKATON PRUEBA</title>
+    <link rel="stylesheet" href="iconos/css/fontello.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilos-index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <header>
+        <img src="images/ipn.png" class="img-logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icon-menu"></label>
+
+        <nav class="menu">
+            <ul>
+                <li id="Inicio"><a href="index.php">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-one">
+            <div class="content-portada">
+                <div class="content-item1">
+                    <h4>INSERTE<h3>NOMBRE</h3> </h4>
+                    <h2>DEL PRODUCTO</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-two">
+            <div class="content-details">
+                <div class="content-item2">
+                    <label class="icon-heart"></label>
+                    <h4>Objetivo</h4>
+                    <p>Búsqueda de la seguridad integral de las personas en el transporte publico.</p>
+
+                </div>
+                <div class="content-item2">
+                    <label class="icon-laptop"></label>
+                    <h4>NOSOTROS</h4>
+                    <p>Somos un grupo de estudiantes de Ingenieria del INSTITUTO POLITECNICO NACIONAL(Ing. Informatica e Ing. Telematica), que busca poner la "Tecnica al Servicio de la Patria".</p>
+
+                </div>
+                <div class="content-item2">
+                    <label class="icon-support"></label>
+                    <h4>Soporte</h4>
+                    <p>Si hay algun problema, favor de comunicarse con los numeros proporcionados al final de la pagina.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-three">
+            <div class="content-module">
+                <img src="images/ciber.jpg">
+                <h1>Tu seguridad esta con nosotros.</h1>
+                <img src="images/escudo1.png">
+                <img src="images/ipn1.png">
+                <img src="images/upiita1.png">
+            </div>
+        </div>
+
+        <div class="content-for">
+            <div class="content-item3">
+                <h4>TITULO</h4>
+                <p>En "INGRESE NOMBRE DEL PRODUCTO.txt" tenemos el compromiso con la sociedad de salvaguardar la integridad fisica de las personas que usen 	nuestros dispositivos.
+                   Siempre innovando con las mejores tecnologias al alcance de tus manos.
+                </p>
+            </div>
+
+		<h4>ACTIVAR</h4>
+        <div class="form-group">
+			<label for="name">CURP:</label>
+			<input id="curp" class="form-control required" name="name" type="text">
+		</div><br>
+
+			<button id="guardar" type="submit" class="btn-danger btn-lg btn-block" name="submit" style="padding-left: 98px;dding-right: 98px;border-left-width: 1px;border-left-style: solid;">Enviar</button>
+
+            <div class="content-five">
+                <div class="content-item4">
+                    <h4>CONTACTO</h4>
+                    <p>Tel: 5589784558<br>Tangamandapio, Calle Canela No. 54 
+                    <br><br>Developed by:<br>Franco Peza Miguel, Gutiérrez Martínez Esteban
+                	<br>Trejo Miranda Miguel, Paez Ortega Oswaldo, Vazquez Cruz Rodrigo</p>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <label class="icon-twitter"></label>
+        <label class="icon-facebook"></label>
+        <label class="icon-instagram"></label>
+        <!--<audio src="images/rehuso.mp3" autoplay="true"></audio>-->
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBYdB4lQsAiUBDAAGmaZxzwNWx4ABkdrXI",
+                authDomain: "mxhacksv.firebaseapp.com",
+                databaseURL: "https://mxhacksv.firebaseio.com",
+                projectId: "mxhacksv",
+                storageBucket: "mxhacksv.appspot.com",
+                messagingSenderId: "918306749438"
+            };
+            firebase.initializeApp(config);
+    </script> 
+    <script src="main.js"></script>      
+</body>
+</html>
