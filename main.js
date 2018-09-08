@@ -3,9 +3,11 @@
 let btnGuardar = document.getElementById("guardar");
 
 //input
-let curp = document.getElementById("curp");
-
-
+let nombre = document.getElementById("nombre");
+let edad = document.getElementById("edad");
+let domicilio = document.getElementById("domicilio");
+let sangre = document.getElementById("sangre");
+let genero = document.getElementById("genero");
 
 //Referencia a la base de datos,rama principal que es la rama "usuarios"
 const ref = firebase.database().ref("users");
@@ -14,7 +16,12 @@ const ref = firebase.database().ref("users");
 btnGuardar.addEventListener("click", ()=>{
   //.value para obtener el valor del input
   let objeto = {
-    curp: curp.value,
+    nombre: nombre.value,
+    edad: edad.value,
+    domicilio: domicilio.value,
+    sangre: sangre.value,
+    genero: genero.value
+
   }
   console.log(objeto);
 
