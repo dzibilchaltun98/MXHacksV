@@ -36,7 +36,7 @@ btnGuardar.addEventListener("click", ()=>{
   console.log(objeto);
 
   ref.push(objeto).then(()=>{
-    alert("se subió");
+    alert("Sus datos han cargado correctamente");
   }).catch((error)=>{
     console.log(error);
   })

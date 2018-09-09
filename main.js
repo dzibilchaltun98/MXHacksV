@@ -5,10 +5,6 @@ let btnSesion = document.getElementById("sesion");
 let btnCerrar = document.getElementById("cerrss");
 
 
-//numero de mesa antes del nombre
-
-
-
 //Formulario para el dispositivo
 //let ////registro = document.getElementById("register")
 //Loader
@@ -39,8 +35,8 @@ btnSesion.addEventListener("click",function(){
   }).catch((error)=>{
     console.log(error);
   })
-  
-  setTimeout(reg, 5000);
+  alert("Se ha iniciado sesion");
+  setTimeout(reg, 1500);
   
 });
 
@@ -65,7 +61,7 @@ btnCerrar.addEventListener("click", ()=>{
     showLogout();
   })
   gnlo();
-  alert("se ha cerrado la sesion");
+  alert("Se ha cerrado la sesion");
 })
 
 //ocultar logout
