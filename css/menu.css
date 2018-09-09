@@ -40,6 +40,7 @@ header{
     font-size: 18px;
     font-weight: bold;
     color: #b7b7b7;
+    cursor: pointer;
 }
 
 .menu li a:hover{

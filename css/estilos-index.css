@@ -114,10 +114,9 @@ main{
         width: 100%;
     }
 }
-.content-module h3{
-
+/* .content-module h3{
 }
-
+ */
 .content-module img{
     margin-top: 40px;
     transition: all 300ms;
