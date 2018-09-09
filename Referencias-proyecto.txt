@@ -1,0 +1,24 @@
+A continuacion, se muestran las referencias que se utilizaron durante el desarrollo del proyecto te lleva 13/7:
+
+https://github.com/gmag11/WifiLocation
+Libreria Wifi Location creada por Germán Martín para poder comunicarnos con el servicio Google Maps GeoLocation AP.
+
+https://programarfacil.com/blog/arduino-blog/geolocalizacion-wifi-arduino-nodemcu/
+Referencia sobre la conexion entre nodemcu y firebase.
+
+https://www.xertica.com/devblog/serverless-con-google-cloud-functions
+Referencia sore como se utilizo google cloud.
+
+https://github.com/firebase/functions-samples/tree/Node-8/email-confirmation
+Referencia de la repo que se utilizo para mandar el correo de confirmacion-ayuda.
+
+
+
+
+
+
+
+
+
+
+
