@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link 
+</head>
+<body>
+	<div class="login-box">
+    <img src="img/av.png" class="avatar">
+		
+		<label for="caja1"><p>REGISTRO</p><br>
+		
+			<label for="caja1"><p>Nombre Completo</p>
+			<p><input type="text" id="nombre" name="nombre" ></p>
+		</label>
+		<label for="caja2"><p>Edad</p>
+			<p><input type="text" name="edad" id="edad" ></p>
+		</label>
+			<label for="caja3"><p>Domicilio</p>
+				<p><input type="text" id="domicilio" name="nombre"></p>
+			</label>
+			<label for="caja4"><p>Tipo de Sangre</p>
+				<p><input type="text" id="sangre" name="nombre" ></p>
+			</label>
+			<label for="caja5"><p>Género</p>
+				<p><input type="text" id="genero" name="nombre" ></p>
+			</label>
+	</div><br>
+
+		<button id="guardar" class="btn-danger btn-lg btn-block" name="submit" >Guardar</button>
+
+	
+</body>
+<div id="loader">
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script> -->
+<script>
+		// Initialize Firebase
+		var config = {
+				apiKey: "AIzaSyBYdB4lQsAiUBDAAGmaZxzwNWx4ABkdrXI",
+				authDomain: "mxhacksv.firebaseapp.com",
+				databaseURL: "https://mxhacksv.firebaseio.com",
+				projectId: "mxhacksv",
+				storageBucket: "mxhacksv.appspot.com",
+				messagingSenderId: "918306749438"
+		};
+		firebase.initializeApp(config);
+</script>
+
+<script src="mareg.js"></script>      
+</html>

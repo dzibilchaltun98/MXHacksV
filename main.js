@@ -4,22 +4,34 @@ let btnGuardar = document.getElementById("guardar");
 let btnSesion = document.getElementById("sesion");
 let btnCerrar = document.getElementById("cerrss");
 
+
+//numero de mesa antes del nombre
+
+
+
+//Formulario para el dispositivo
+//let ////registro = document.getElementById("register")
+//Loader
+let loader = document.getElementById("loader")
+
 //input
-let nombre = document.getElementById("nombre");
+/* let nombre = document.getElementById("nombre");
 let edad = document.getElementById("edad");
 let domicilio = document.getElementById("domicilio");
 let sangre = document.getElementById("sangre");
 let genero = document.getElementById("genero");
+ */
 
-//Referencia a la base de datos,rama principal que es la rama "usuarios"
-const ref = firebase.database().ref("users");
+/* //Referencia a la base de datos,rama principal que es la rama "usuarios"
+const ref = firebase.database().ref("users"); */
 
 
 btnSesion.addEventListener("click",function(){
   console.log('click event')
   
+  GenLoader();
+
   let provider = new firebase.auth.GoogleAuthProvider();
-  // provider.addScope('https://www.googleapis.com/auth/contacts.readonly');  console.log("login");
   
   firebase.auth().signInWithPopup(provider).then((result)=>{
     console.log(result.user);
@@ -28,7 +40,8 @@ btnSesion.addEventListener("click",function(){
     console.log(error);
   })
   
-  alert("Se ha iniciado sesión")  
+  setTimeout(reg, 5000);
+  
 });
 
 //Prueba de que el boton funciona
@@ -51,6 +64,7 @@ btnCerrar.addEventListener("click", ()=>{
   }).catch(()=>{    
     showLogout();
   })
+  gnlo();
   alert("se ha cerrado la sesion");
 })
 
@@ -58,16 +72,28 @@ btnCerrar.addEventListener("click", ()=>{
 const showLogout = () =>{
   btnSesion.style.display = "none";
   btnCerrar.style.display = "block";
+  ////registro.style.display = "block";
 }
 //ocultar login
 const showLogin = () =>{
   btnSesion.style.display = "block";
   btnCerrar.style.display = "none"
+  //registro.style.display = "none";
+}
+//Poner pantalla gris y simular una carga
+const GenLoader = () =>{
+  loader.style.visibility = "visible";
 }
 
+const gnlo = ()=>{
+  loader.style.visibility = "hidden";
+}
+//cambiar a una ventana nueva
+const reg = ()=>{
+  window.location = "http://127.0.0.1:8080/registro.html";
+}
 
-
-btnGuardar.addEventListener("click", ()=>{
+/* btnGuardar.addEventListener("click", ()=>{
   //.value para obtener el valor del input
   let objeto = {
     nombre: nombre.value,
@@ -103,3 +129,4 @@ ref.on('value', (data)=>{
   }
 
 })
+ */
